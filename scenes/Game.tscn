@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfpc022ahcenn"]
+
+[ext_resource type="PackedScene" uid="uid://sqj8qweg6se" path="res://prefabs/Player.tscn" id="1_my7e0"]
+[ext_resource type="PackedScene" uid="uid://bh0h7rcni4gov" path="res://prefabs/ball.tscn" id="2_6tr03"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1, 7)
+
+[node name="Player" parent="." instance=ExtResource("1_my7e0")]
+position = Vector2(100, 450)
+
+[node name="IA" parent="." instance=ExtResource("1_my7e0")]
+position = Vector2(1500, 450)
+metadata/is_human_controlled = false
+
+[node name="ball" parent="." instance=ExtResource("2_6tr03")]
+position = Vector2(800, 450)
